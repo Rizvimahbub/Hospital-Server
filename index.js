@@ -49,7 +49,7 @@ const nodemailerMailgun = nodemailer.createTransport(mg(auth));
 
 function sendAppointmentEmail(booking) {
     const { patient, patientName, treatment, date, slot } = booking;
-
+    console.log(patient)
     var email = {
         from: "rizvialam007@gmail.com",
         to: patient,
